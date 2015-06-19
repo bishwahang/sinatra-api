@@ -21,7 +21,7 @@ def make_resturants
 end
 
 def get_logo_url(name)
-  default_logo = "https://experteer-lunch-app.herokuapp.com/"
+  default_logo = "https://experteer-lunch-app.herokuapp.com"
   # default_logo = "http://localhost:4567"
   "#{default_logo}/images/#{name}"
 end
