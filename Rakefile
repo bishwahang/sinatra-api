@@ -10,7 +10,7 @@ task "db:populate" do
 end
 
 def make_resturants
-  names = [{ :name => "Taverne Diogenis", :location => "Herzog-Wilhelm-Straße 7", :logo_url => "default_logo.png"},
+  names = [{ :name => "Taverne Diogenis", :location => "Herzog-Wilhelm-Straße 7", :logo_url => "http://www.mediterrasian.com/graphics/cuisine_of_month/top_intro_pic_greek.jpg"},
            { :name => "Pakistani", :location => "maximilianstrasse 9", :logo_url => "http://t3.gstatic.com/images?q=tbn:ANd9GcSquAMm8f53DgO9VPxu3h2qLQzVgGLGjx2IbTYXx-WOiPmqVzHaZqfspxc"},
            { :name => "Holy Moly Burger", :location => "Sonnerstrasse", :logo_url => "http://cdn-img.easyicon.net/png/6/648.png" },
            { :name => "Sakura Sushi Resturant", :location => "Prannerstrasse 1, 8033, Muenchen", :logo_url => "http://logopond.com/logos/24de114a009528757de3ce0a3495259b.png" }
