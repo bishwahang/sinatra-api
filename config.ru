@@ -1,2 +1,2 @@
-require './api/main'
+require './app/main'
 run Sinatra::Application
