@@ -14,6 +14,8 @@ gem "sinatra-activerecord"
 gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
 
+gem 'haml'
+
 group :development do
  gem 'sqlite3'
  gem "tux"

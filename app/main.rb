@@ -2,6 +2,7 @@ require 'sinatra'
 require 'json'
 require 'sinatra'
 require 'sinatra/activerecord'
+require 'haml'
 require './environments'
 
 class User < ActiveRecord::Base
@@ -13,12 +14,7 @@ class Resturant < ActiveRecord::Base
 end
 
 get '/' do
-  content_type :json
-  return {:message => "Howdy, jughead"}.to_json
-end
-get '/sushi.json' do
-  content_type :json
-  return {:sushi => ["Maguro", "Hamachi", "Uni", "Saba", "Ebi", "Sake", "Tai"]}.to_json
+  haml :index
 end
 
 get '/resturants/:id' do
@@ -45,9 +41,14 @@ post '/resturants' do
   end
 end
 
-get '/defaultlogo' do
+get '/images/:name' do
+  logo_name = params[:name]
   content_type 'image/png'
-  filename = "public/images/default_logo.png"
+  filename = "public/images/#{logo_name}.png"
   redirect 404 unless File.readable?(filename)
   send_file filename
+end
+
+post '/signin' do
+  "Coming soon...!"
 end

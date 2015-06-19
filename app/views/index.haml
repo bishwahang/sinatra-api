@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title Experteer Restro Finder
+  %body
+    %h1 Howdy Jughead
+    %form{:action => "/signin", :method => "post"}
+      %legend
+        Only Admin Sign In
+      %p
+        %label{:for => "email"} Email
+        %input{:type => "text_field", :name => "email", :id => "email"}
+        %br
+        %label{:for => "password"} Password
+        %input{:type => "password", :name => "password", :id => "password"}
+      %p
+        %input{:type => "submit", :value => "Submit!"}
