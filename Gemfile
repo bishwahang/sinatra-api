@@ -3,6 +3,7 @@ gem 'unicorn'
 gem 'json'
 gem 'rake'
 gem 'rack-test'
+gem 'rack-contrib'
 
 gem "sinatra"
 gem "activerecord"
