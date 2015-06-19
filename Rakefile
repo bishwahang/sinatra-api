@@ -1,11 +1,5 @@
-require 'rspec/core'
-require 'rspec/core/rake_task'
 require "./app/main.rb"
 require "sinatra/activerecord/rake"
-task :default => :spec
-
-desc "Run our Spec"
-RSpec::Core::RakeTask.new(:spec)
 
 desc "Fill database with sample data"
 task "populate" do
