@@ -2,7 +2,7 @@ require "./app/main.rb"
 require "sinatra/activerecord/rake"
 
 desc "Fill database with sample data"
-task "populate" do
+task "db:populate" do
   make_resturants
 end
 
