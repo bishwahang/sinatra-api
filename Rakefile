@@ -14,7 +14,7 @@ def make_resturants
   #          { :name => "Holy Moly Burger", :location => "Sonnerstrasse", :logo_url => "http://cdn-img.easyicon.net/png/6/648.png" },
   #          { :name => "Sakura Sushi Resturant", :location => "Prannerstrasse 1, 8033, Muenchen", :logo_url => "http://logopond.com/logos/24de114a009528757de3ce0a3495259b.png" }
   # ]
-  names = %w"burger deeba dnd greek losteria default"
+  names = %w"burger deeba dnd greek losteria"
   names.each do |e|
     Resturant.create!(:name => "#{e.capitalize}'s Kitchen", :location => "#{Faker::Address.street_address}, Munich", :logo_url => get_logo_url(e))
   end
