@@ -44,3 +44,10 @@ post '/resturants' do
     return { :status => "error" }.to_json
   end
 end
+
+get '/defaultlogo' do
+  content_type 'image/png'
+  filename = "public/images/default_logo.png"
+  redirect 404 unless File.readable?(filename)
+  send_file filename
+end
