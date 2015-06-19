@@ -5,6 +5,9 @@ gem 'rake'
 gem 'rack-test'
 gem 'rack-contrib'
 
+gem 'faker'
+gem 'populator'
+
 gem "sinatra"
 gem "activerecord"
 gem "sinatra-activerecord"
